@@ -1,0 +1,27 @@
+/* ============================================================
+   FILE: frontend/components/Layout.module.css
+   ============================================================ */
+
+.shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  margin-left: 220px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 20px 32px;
+}
+
+.content {
+  padding: 28px 32px;
+  flex: 1;
+}
