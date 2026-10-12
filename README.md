@@ -1,0 +1,1 @@
+Code structure and its features are built such that it makes the work of teachers easy along with an interactive, playful UI for students. Making them competitive enough to study and complete their remaining work.
