@@ -1,0 +1,131 @@
+/* ============================================================
+   FILE: frontend/components/Sidebar.module.css
+   ============================================================ */
+
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 20px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 14px;
+}
+
+.logoIcon {
+  font-size: 26px;
+  background: rgba(99, 102, 241, 0.15);
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+.logoText {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+  display: block;
+}
+
+.logoSub {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 2px;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 12px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: 10px;
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.15s ease-in-out;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.95);
+  transform: translateX(2px);
+}
+
+.navItem.active {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35);
+  font-weight: 600;
+}
+
+.navIcon {
+  font-size: 18px;
+  width: 22px;
+  text-align: center;
+}
+
+.navLabel {
+  flex: 1;
+}
+
+.footer {
+  padding: 18px 18px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.teacherInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.teacherName {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.teacherRole {
+  font-size: 11px;
+  color: rgba(255,255,255,0.45);
+}
+
+.version {
+  font-size: 11px;
+  color: rgba(255,255,255,0.3);
+}

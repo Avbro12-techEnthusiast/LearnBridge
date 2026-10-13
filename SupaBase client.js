@@ -1,14 +1,6 @@
 // ============================================================
-// FILE: backend/config/supabase.js
-// Supabase client initialization
+// FILE: SupaBase client.js
+// Proxies to config/supabase.js
 // ============================================================
 
-const { createClient } = require('@supabase/supabase-js');
-require('dotenv').config();
-
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_KEY
-);
-
-module.exports = supabase;
+module.exports = require('./config/supabase');
