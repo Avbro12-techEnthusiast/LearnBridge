@@ -1,0 +1,30 @@
+﻿{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "api": {
+      "root": ".",
+      "framework": "express",
+      "buildCommand": "npm install",
+      "startCommand": "npm start"
+    },
+    "frontend": {
+      "root": "frontend",
+      "framework": "nextjs",
+      "buildCommand": "npm install && npm run build"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": { "service": "api" }
+    },
+    {
+      "source": "/health",
+      "destination": { "service": "api" }
+    },
+    {
+      "source": "/(.*)",
+      "destination": { "service": "frontend" }
+    }
+  ]
+}

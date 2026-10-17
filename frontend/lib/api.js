@@ -6,7 +6,10 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000',
+  // In production (Vercel), NEXT_PUBLIC_API_URL is not set so baseURL is ''
+  // (empty = relative paths). Vercel rewrites /api/* → the Express service.
+  // Locally, .env.local sets NEXT_PUBLIC_API_URL=http://localhost:4000
+  baseURL: process.env.NEXT_PUBLIC_API_URL || '',
 });
 
 // Students
